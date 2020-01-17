@@ -25,6 +25,15 @@
 
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.css" rel="stylesheet">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <!-- Menu -->
+  <script src="menu.js"></script>
+
+
   <!-- CSS personanlizado -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -32,33 +41,16 @@
 
 <body>
 
+  <script>
+    $('document').ready(function () {
+      $('#mainNav').html(menu);
+    });
+
+  </script>
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">CAM</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">Sobre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="post.html">Mensagens</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contato</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+
   </nav>
 
   <!-- Page Header -->
@@ -78,6 +70,59 @@
       </div>
     </div>
   </header>
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h2 class="section-heading">Amizade</h2>
+
+          <a href="#">
+            <img class="img-fluid" src="img/janeiro2020/amizade.jpg" alt="Imagem que representa amizade">
+          </a>
+
+          <p></p>
+          <p class="text-justify">O grande significado de amizade;
+          </p>
+          <p class="text-justify">Hoje uma data não explicada, um momento não esperado; mexer com
+            sentimentos que por mim já estariam esquecidos, pelo simples fato de ouvir uma palavra, um nome, essa
+            amizade veio a tona. Todos aqueles amigos que hoje pertencem à vida de cada um, além de serem seus amigos
+            são muitas vezes as grandes lembranças. São nas amizades que muitas vezes são descobertos a importância que
+            tem o ser humano; quanto vale o ser humano pra cada um de vocês. Qual amizade que se deve preservar mais?
+            Aquele amigo que vai todo o dia a sua casa, ou aquele amigo que no dia que você precisar ele vai estar lá.
+            Amigos todos são, amizade, poucos tem, preserve esse amigo mesmo estando longe, pois amizade sincera, ela
+            nunca se apaga, ela prolifera-se outros tempos, nos outros mundos, pelas outras vidas.
+          </p>
+          <p class="text-justify">Agradeço a todos por ter eu de amigo, por lembrar-se de mim, muitas vezes somente em
+            situações difíceis, muitas vezes em situações de dor, muito raro nas suas alegrias, mesmo assim continuamos
+            sendo amigos pela consideração que todos têm por mim, espírito, amigo, um ser onde você pode contar, pode
+            chamar; essa é a diferença da amizade do Dr. Agnaldo que você chama e ele vai onde você estiver.</p>
+            <p class="text-justify">Agradeço a todas as amizades.
+            </p>
+            <p class="text-justify">Agradeço à oportunidade de poder lembrar-se de um grande amigo, amigo irmão, aquele
+              que sempre me acompanhou nas horas fáceis e nas horas difíceis, hoje um momento de alegria por
+              reencontra-lo e saber que ainda presta o seu trabalho, um grande médico como sempre foi e que esta junto
+              de todos os seres humanos, mesmo sendo um médico veterano e ainda muito respeitado, tenho certeza que
+              ainda vai ajudar-me muito o tempo que ainda estiver na terra.</p>
+            <p class="text-justify">Agora eu reencontrei-o, também tenho certeza de que amizade é contínua;</p>
+            <p class="text-justify">Preserve o seu amigo, preserve o seu irmão, pois esse é o único que lhe estende a
+              mão.</p>
+            <p class="text-justify text-margin-none">Boa noite a todos.</p>
+            <p></p>
+            <p class="text-right text-margin-none">~Mensagem transmitida em: 21/07/2017</p>
+            <p class="text-right text-margin-none">~Dr. Agnaldo Meirelles</p>
+
+            <div class="post-preview">
+              <p class="post-meta">Postado por:
+                <a href="#">Equipe CAM,</a>
+                em 20 de Janeiro de 2020</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
 
   <!-- Post Content -->
   <article>
@@ -87,7 +132,7 @@
           <h2 class="section-heading">Saudades</h2>
 
           <a href="#">
-            <img class="img-fluid" src="img/janeiro2020/saudades.jpg" alt="">
+            <img class="img-fluid" src="img/janeiro2020/saudades.jpg" alt="Imagem que representa suadades">
           </a>
 
           <p></p>
@@ -144,7 +189,7 @@
           <h2 class="section-heading">Incerteza</h2>
 
           <a href="#">
-            <img class="img-fluid" src="img/janeiro2020/incerteza.jpg" alt="">
+            <img class="img-fluid" src="img/janeiro2020/incerteza.jpg" alt="Imagem que representa incerteza">
           </a>
 
           <p class="text-justify">Todos os caminhos são incertos, consequência dos seus próprios pensamentos; as suas
